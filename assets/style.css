@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+
 }
 
 textarea{
@@ -68,4 +69,28 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.hourBlock {
+  width: 100%;
+  align-items: center;
+  font-size: 20px;
+  display:flex;
+  
+}
+.hourBlock textarea {
+  background-color:lightgray;
+ width: 80%;
+}
+.hourBlock button {
+  width: 10%;
+  background-color:rgb(100, 100, 230);
+  height:60px;
+  color: white;
+}
+.hourBlock p {
+  width: 10%;
+  border-top: 1px dashed black;
+  padding: 14px;
+  text-align: center;
 }
