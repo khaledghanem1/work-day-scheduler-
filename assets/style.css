@@ -43,17 +43,17 @@ textarea{
   border-top: 1px dashed #000000;
 }
 
-.past {
+.time-block.past textarea {
   background-color: #d3d3d3;
   color: white;
 }
 
-.present {
+.time-block.present textarea {
   background-color: #ff6961;
   color: white;
 }
 
-.future {
+.time-block.future textarea {
   background-color: #77dd77;
   color: white;
 }
@@ -71,24 +71,21 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.hourBlock {
+.time-block {
   width: 100%;
   align-items: center;
   font-size: 20px;
   display:flex;
   
 }
-.hourBlock textarea {
-  background-color:lightgray;
- width: 80%;
-}
-.hourBlock button {
+
+.time-block button {
   width: 10%;
   background-color:rgb(100, 100, 230);
   height:60px;
   color: white;
 }
-.hourBlock p {
+.time-block p {
   width: 10%;
   border-top: 1px dashed black;
   padding: 14px;
