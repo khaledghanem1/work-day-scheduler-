@@ -48,20 +48,21 @@ $(document).ready(function () {
   $( ".time-block button" ).click(function() {
     console.log(this)
     var notes = $(this).siblings("textarea").val();
-    var time =$(this).siblings(".hour").html();
+    var time =$(this).parent().attr("id");
     console.log(notes, time)
     localStorage.setItem(time,notes);
+    $("#localStorage").text("Appointment Saved to Local Storage")
   });
 
-$("#hour9 textarea").val(localStorage.getItem("9:00 AM"));
-$("#hour10 textarea").val(localStorage.getItem("10:00 AM"));
-$("#hour11 textarea").val(localStorage.getItem("11:00 AM"));
-$("#hour12 textarea").val(localStorage.getItem("12:00 PM"));
-$("#hour13 textarea").val(localStorage.getItem("01:00 PM"));
-$("#hour14 textarea").val(localStorage.getItem("02:00 PM"));
-$("#hour15 textarea").val(localStorage.getItem("03:00 PM"));
-$("#hour16 textarea").val(localStorage.getItem("04:00 PM"));
-$("#hour17 textarea").val(localStorage.getItem("05:00 PM"));
+$("#hour9 textarea").val(localStorage.getItem("hour9"));
+$("#hour10 textarea").val(localStorage.getItem("hour10"));
+$("#hour11 textarea").val(localStorage.getItem("hour11"));
+$("#hour12 textarea").val(localStorage.getItem("hour12"));
+$("#hour13 textarea").val(localStorage.getItem("hour13"));
+$("#hour14 textarea").val(localStorage.getItem("hour14"));
+$("#hour15 textarea").val(localStorage.getItem("hour15"));
+$("#hour16 textarea").val(localStorage.getItem("hour16"));
+$("#hour17 textarea").val(localStorage.getItem("hour17"));
 
  
 });
